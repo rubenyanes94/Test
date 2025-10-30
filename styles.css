@@ -1,0 +1,136 @@
+/* Importa una fuente elegante */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 66px; 
+}
+
+
+#main-nav {
+    background-color: #ffffff; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    transition: background-color 0.3s ease;
+}
+
+#main-nav.scrolled {
+    background-color: #212529; 
+    transition: background-color 0.3s ease;
+}
+
+#main-nav.scrolled .nav-link,
+#main-nav.scrolled .navbar-brand {
+    color: #ffffff !important;
+}
+
+.nav-link.active {
+    font-weight: 700;
+    color: #0d6efd !important; 
+}
+
+
+.hero-section {
+    min-height: 80vh; 
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url('https://via.placeholder.com/1920x1080?text=Fondo+Elegante+Mueblería') center center no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+.custom-btn-glow {
+    box-shadow: 0 0 15px rgba(13, 110, 253, 0.5);
+    transition: all 0.3s ease;
+}
+
+.custom-btn-glow:hover {
+    box-shadow: 0 0 25px rgba(13, 110, 253, 0.8);
+    transform: scale(1.05);
+}
+
+
+.section-3d-focus {
+    background-color: #000000; 
+    background-image: radial-gradient(circle, #343a40, #000000); 
+    color: white;
+}
+
+.interactive-viewer-box {
+    background-color: rgba(255, 255, 255, 0.05); 
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+}
+
+#viewer-container {
+    background-color: #2c3e50 !important; 
+    border: 2px solid #0d6efd; 
+    position: relative;
+    overflow: hidden;
+    transition: background-image 0.5s ease;
+}
+
+
+.product-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15) !important;
+}
+
+
+#vista-ambiente .container {
+    position: relative;
+    padding-bottom: 100px; 
+}
+
+
+.carousel-background-img {
+    width: 100%;
+    height: 550px; 
+    object-fit: cover; 
+    filter: brightness(0.8); 
+}
+
+
+.static-furniture-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10; 
+}
+
+.furniture-image {
+    width: 400px; 
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+}
+
+
+.bg-dark-transparent {
+    background-color: rgba(0, 0, 0, 0.5); 
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.hero-section {
+    min-height: 80vh; 
+    
+    background: 
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), 
+        url(point3d-commercial-imaging-ltd-nQlVMCHPysY-unsplash.jpg)
+        center center no-repeat;
+    
+    background-size: cover; 
+    background-attachment: fixed; 
+    color: white;
+}
+
+
+@media (max-width: 991.98px) {
+    body {
+        padding-top: 56px;
+    }
+}
