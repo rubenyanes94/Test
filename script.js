@@ -32,6 +32,16 @@ document.addEventListener('DOMContentLoaded', function() {
             document.getElementById('vista-ambiente').scrollIntoView({ behavior: 'smooth' });
         });
     });
+
+     document.addEventListener('DOMContentLoaded', () => {
+            document.querySelectorAll('.view-space-btn').forEach(button => {
+                button.addEventListener('click', (e) => {
+                    const productName = e.target.closest('.card-body').querySelector('.card-title').textContent;
+                    console.log(`Función 'Ver en tu Espacio' activada para: ${productName}`);
+                    // Aquí iría el código para la función de realidad aumentada o modal
+                });
+            });
+        });
 });
 
 

@@ -1,18 +1,22 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mueblería Innovadora - Landing Page</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="main-nav">
         <div class="container">
             <a class="navbar-brand fw-bold" href="#">FURNI-PRO</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
@@ -38,53 +42,115 @@
     </nav>
 
     <section id="inicio" class="hero-section d-flex align-items-center text-center">
-        <div class="container">
-            <h1 class="display-3 fw-bolder text-white">Diseña tu Espacio, En Vivo.</h1>
-            <p class="lead text-white-50">Explora nuestros muebles y hazlos tuyos.</p>
-            <a href="#vista-ambiente" class="btn btn-primary btn-lg mt-3 custom-btn-glow">FURNI-VIEW</a>
+        <div class="container z-1">
+            <h1 class="furni-pro-logo mb-3">FURNI-PRO</h1>
+            <p class="lead text-white-75 mb-3">Tu hogar cuenta tu historia, hazla inolvidable.</p>
+            <p class="text-white-50 mb-5 fs-5">Descubre una colección curada de muebles atemporales y acentos modernos
+                diseñados para brindar comodidad y carácter a cada rincón de tu espacio.</p>
+            <div class="row justify-content-center mb-5">
+                <div class="col-4 col-md-3">
+                    <i class="bi bi-patch-check-fill value-prop-icon"></i>
+                    <p class="small text-white fw-bold m-0">Calidad Garantizada</p>
+                </div>
+                <div class="col-4 col-md-3">
+                    <i class="bi bi-star-fill value-prop-icon"></i>
+                    <p class="small text-white fw-bold m-0">Diseño Exclusivo</p>
+                </div>
+                <div class="col-4 col-md-3">
+                    <i class="bi bi-tree-fill value-prop-icon"></i>
+                    <p class="small text-white fw-bold m-0">Materiales Sostenibles</p>
+                </div>
+            </div>
+            <a href="#productos" class="btn btn-light btn-lg fw-bold text-dark border-0 shadow-lg"
+                style="letter-spacing: 0.2em;">FURNI-VIEW</a>
         </div>
     </section>
 
     <section id="productos" class="py-5 bg-light">
-        <div class="container">
-            <h2 class="text-center mb-4">Colección Destacada</h2>
+        <div class="container my-5">
+            <h2 class="text-center mb-5 fw-bold text-dark">Colección Destacada</h2>
+
             <div class="row row-cols-1 row-cols-md-3 g-4">
+
                 <div class="col">
-                    <div class="card h-100 shadow-sm product-card" data-product="sofa-modular">
-                        <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top" alt="Sofá Modular">
-                        <div class="card-body">
-                            <h5 class="card-title">Sofá Modular Elegante</h5>
-                            <p class="card-text text-muted">Diseño adaptable, comodidad inigualable.</p>
-                            <button class="btn btn-sm btn-outline-dark view-space-btn"
-                                data-product-image="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
-                                Ver en tu Espacio
-                            </button>
+                    <div class="card h-100 shadow product-card" data-product="sofa-modular">
+                        <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            class="card-img-top" alt="Sofá Modular Elegante"
+                            onerror="this.onerror=null;this.src='https://placehold.co/600x400/343a40/ffffff?text=Imagen+No+Disp.'">
+
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title fw-bold">Sofá Modular Elegante</h5>
+                            <p class="card-text text-muted mb-3">Diseño adaptable, comodidad inigualable. Ideal para
+                                espacios modernos.</p>
+
+                            <p class="product-price mt-auto mb-3">$1,499.00</p>
+
+                            <div class="d-grid gap-2">
+                                <button class="btn btn-outline-dark view-space-btn"
+                                    data-product-image="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                                    Ver en tu Espacio
+                                </button>
+                                <a href="https://wa.me/521234567890?text=Hola,%20estoy%20interesado/a%20en%20el%20Sofá%20Modular%20Elegante%20que%20vi%20en%20su%20web."
+                                    class="btn whatsapp-btn fw-bold d-flex align-items-center justify-content-center"
+                                    target="_blank">
+                                    <i class="bi bi-whatsapp me-2"></i> Comprar por WhatsApp
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card h-100 shadow product-card" data-product="mesa-centro">
+                        <img src="paul-weaver-nWidMEQsnAQ-unsplash.jpg" class="card-img-top"
+                            alt="Mesa de Centro Minimalista"
+                            onerror="this.onerror=null;this.src='https://placehold.co/600x400/343a40/ffffff?text=Imagen+No+Disp.'">
+
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title fw-bold">Mesa de Centro Minimalista</h5>
+                            <p class="card-text text-muted mb-3">Madera premium y líneas limpias. Un toque de elegancia
+                                a tu sala.</p>
+
+                            <p class="product-price mt-auto mb-3">$349.00</p>
+
+                            <div class="d-grid gap-2">
+                                <button class="btn btn-outline-dark view-space-btn"
+                                    data-product-image="paul-weaver-nWidMEQsnAQ-unsplash.jpg">
+                                    Ver en tu Espacio
+                                </button>
+                                <a href="https://wa.me/521234567890?text=Hola,%20estoy%20interesado/a%20en%20la%20Mesa%20de%20Centro%20Minimalista%20que%20vi%20en%20su%20web."
+                                    class="btn whatsapp-btn fw-bold d-flex align-items-center justify-content-center"
+                                    target="_blank">
+                                    <i class="bi bi-whatsapp me-2"></i> Comprar por WhatsApp
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card h-100 shadow-sm product-card" data-product="mesa-centro">
-                        <img src="paul-weaver-nWidMEQsnAQ-unsplash.jpg" class="card-img-top" alt="Mesa de Centro">
-                        <div class="card-body">
-                            <h5 class="card-title">Mesa de Centro Minimalista</h5>
-                            <p class="card-text text-muted">Madera premium y líneas limpias.</p>
-                            <button class="btn btn-sm btn-outline-dark view-space-btn"
-                                data-product-image="paul-weaver-nWidMEQsnAQ-unsplash.jpg">
-                                Ver en tu Espacio
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card h-100 shadow-sm product-card" data-product="silla-oficina">
-                        <img src="personalgraphic-com-4Co4l84sJWg-unsplash.jpg" class="card-img-top" alt="Silla Ergonómica">
-                        <div class="card-body">
-                            <h5 class="card-title">Silla de Oficina Ergonómica</h5>
-                            <p class="card-text text-muted">Comodidad y soporte para tu jornada laboral.</p>
-                            <button class="btn btn-sm btn-outline-dark view-space-btn"
-                                data-product-image="personalgraphic-com-4Co4l84sJWg-unsplash.jpg">
-                                Ver en tu Espacio
-                            </button>
+                    <div class="card h-100 shadow product-card" data-product="silla-oficina">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-QRbiLoUo9z8l_VhcwHYVXkPEn-kzxBlKbQ&s"
+                            class="card-img-top" alt="Silla de Oficina Ergonómica"
+                            onerror="this.onerror=null;this.src='https://placehold.co/600x400/343a40/ffffff?text=Imagen+No+Disp.'">
+
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title fw-bold">Silla de Oficina Ergonómica</h5>
+                            <p class="card-text text-muted mb-3">Comodidad y soporte para tu jornada laboral. Mejora tu
+                                productividad.</p>
+
+                            <p class="product-price mt-auto mb-3">$499.00</p>
+
+                            <div class="d-grid gap-2">
+                                <button class="btn btn-outline-dark view-space-btn"
+                                    data-product-image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-QRbiLoUo9z8l_VhcwHYVXkPEn-kzxBlKbQ&s">
+                                    Ver en tu Espacio
+                                </button>
+                                <a href="https://wa.me/521234567890?text=Hola,%20estoy%20interesado/a%20en%20la%20Silla%20de%20Oficina%20Ergonómica%20que%20vi%20en%20su%20web."
+                                    class="btn whatsapp-btn fw-bold d-flex align-items-center justify-content-center"
+                                    target="_blank">
+                                    <i class="bi bi-whatsapp me-2"></i> Comprar por WhatsApp
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -93,51 +159,60 @@
     </section>
 
     <section id="vista-ambiente" class="py-5 text-center section-3d-focus">
-    <div class="container position-relative">
-        <h1 class="mb-4 text-white">FURNI-VIEW</h1>
-        <p class="lead text-white-50">Explora cómo nuestro Sofá Modular luce en diferentes estilos de decoración.</p>
-        
-        <div id="ambienteCarousel" class="carousel slide carousel-fade mb-4" data-bs-ride="carousel" data-bs-interval="4000">
-            <div class="carousel-inner" style="height: 550px; border-radius: 10px; overflow: hidden;">
-                
-                <div class="carousel-item active">
-                    <img src="serge-le-strat-tnw3krPFXxk-unsplash.jpg" class="d-block w-100 carousel-background-img" alt="Ambiente Minimalista">
-                    <div class="carousel-caption d-none d-md-block bg-dark-transparent">
-                        <h5>Estilo Industrial - Minimalista</h5>
+        <div class="container position-relative">
+            <h1 class="mb-4 text-white">FURNI-VIEW</h1>
+            <p class="lead text-white-50">Explora cómo nuestro Sofá Modular luce en diferentes estilos de decoración.
+            </p>
+
+            <div id="ambienteCarousel" class="carousel slide carousel-fade mb-4" data-bs-ride="carousel"
+                data-bs-interval="4000">
+                <div class="carousel-inner" style="height: 550px; border-radius: 10px; overflow: hidden;">
+
+                    <div class="carousel-item active">
+                        <img src="serge-le-strat-tnw3krPFXxk-unsplash.jpg" class="d-block w-100 carousel-background-img"
+                            alt="Ambiente Minimalista">
+                        <div class="carousel-caption d-none d-md-block bg-dark-transparent">
+                            <h5>Estilo Industrial - Minimalista</h5>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="jason-hafso-YypTXBPF5S4-unsplash.jpg" class="d-block w-100 carousel-background-img"
+                            alt="Ambiente Clásico">
+                        <div class="carousel-caption d-none d-md-block bg-dark-transparent">
+                            <h5>Estilo Nórdico - Cálido</h5>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="point3d-commercial-imaging-ltd-nQlVMCHPysY-unsplash.jpg"
+                            class="d-block w-100 carousel-background-img" alt="Ambiente Moderno">
+                        <div class="carousel-caption d-none d-md-block bg-dark-transparent">
+                            <h5>Estilo Bohemio - Moderno</h5>
+                        </div>
                     </div>
                 </div>
-                
-                <div class="carousel-item">
-                    <img src="jason-hafso-YypTXBPF5S4-unsplash.jpg" class="d-block w-100 carousel-background-img" alt="Ambiente Clásico">
-                    <div class="carousel-caption d-none d-md-block bg-dark-transparent">
-                        <h5>Estilo Nórdico - Cálido</h5>
-                    </div>
-                </div>
-                
-                <div class="carousel-item">
-                    <img src="point3d-commercial-imaging-ltd-nQlVMCHPysY-unsplash.jpg" class="d-block w-100 carousel-background-img" alt="Ambiente Moderno">
-                    <div class="carousel-caption d-none d-md-block bg-dark-transparent">
-                        <h5>Estilo Bohemio - Moderno</h5>
-                    </div>
-                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#ambienteCarousel"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#ambienteCarousel"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                </button>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#ambienteCarousel" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Anterior</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#ambienteCarousel" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Siguiente</span>
-            </button>
+
+            <div class="static-furniture-overlay">
+                <img id="staticFurnitureImage"
+                    src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?q=80&w=600&h=400&auto=format&fit=crop"
+                    alt="Sofá Estático Principal" class="img-fluid furniture-image shadow-lg">
+                <p class="mt-2 fw-bold text-white-50">Sofá "Cloudy"</p>
+            </div>
+
         </div>
-        
-        <div class="static-furniture-overlay">
-            <img id="staticFurnitureImage" src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?q=80&w=600&h=400&auto=format&fit=crop" alt="Sofá Estático Principal" class="img-fluid furniture-image shadow-lg">
-            <p class="mt-2 fw-bold text-white-50">Sofá "Cloudy"</p>
-        </div>
-        
-    </div>
-</section>
+    </section>
 
     <section id="nosotros" class="py-5">
         <div class="container">
@@ -169,168 +244,176 @@
     </section>
 
     <section id="contacto" class="py-5 bg-light contact-section-custom">
-    <div class="container">
-        <h2 class="text-center mb-5 display-5 fw-bold contact-title">Contacto</h2>
-        
-        <div class="row">
-            
-            <div class="col-lg-5 mb-4 mb-lg-0 contact-info">
-                
-                <h4 class="mb-4">Información de Contacto</h4>
-                
-                <div class="d-flex align-items-center mb-3">
-                    <i class="bi bi-envelope-fill contact-icon me-3"></i>
-                    <p class="mb-0">consultas@furni-pro.com</p>
-                </div>
-                
-                <div class="d-flex align-items-center mb-3">
-                    <i class="bi bi-geo-alt-fill contact-icon me-3"></i>
-                    <p class="mb-0">Av. Principal 123, Ciudad Ejemplo - País</p>
+        <div class="container">
+            <h2 class="text-center mb-5 display-5 fw-bold contact-title">Contacto</h2>
+
+            <div class="row">
+
+                <div class="col-lg-5 mb-4 mb-lg-0 contact-info">
+
+                    <h4 class="mb-4">Información de Contacto</h4>
+
+                    <div class="d-flex align-items-center mb-3">
+                        <i class="bi bi-envelope-fill contact-icon me-3"></i>
+                        <p class="mb-0">consultas@furni-pro.com</p>
+                    </div>
+
+                    <div class="d-flex align-items-center mb-3">
+                        <i class="bi bi-geo-alt-fill contact-icon me-3"></i>
+                        <p class="mb-0">Av. Principal 123, Ciudad Ejemplo - País</p>
+                    </div>
+
+                    <div class="d-flex align-items-center mb-3">
+                        <i class="bi bi-telephone-fill contact-icon me-3"></i>
+                        <p class="mb-0">(01) 3453-654</p>
+                    </div>
+
+                    <div class="d-flex align-items-center mb-5">
+                        <i class="bi bi-telephone-fill contact-icon me-3" style="visibility: hidden;"></i>
+                        <p class="mb-0">(01) 3233-452</p>
+                    </div>
+
+                    <div class="social-icons">
+                        <a href="#" class="social-link facebook"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="social-link twitter"><i class="bi bi-twitter"></i></a>
+                        <a href="#" class="social-link instagram"><i class="bi bi-instagram"></i></a>
+                    </div>
                 </div>
 
-                <div class="d-flex align-items-center mb-3">
-                    <i class="bi bi-telephone-fill contact-icon me-3"></i>
-                    <p class="mb-0">(01) 3453-654</p>
-                </div>
+                <div class="col-lg-7">
+                    <form class="contact-form p-4 shadow-sm bg-white rounded">
 
-                <div class="d-flex align-items-center mb-5">
-                    <i class="bi bi-telephone-fill contact-icon me-3" style="visibility: hidden;"></i>
-                    <p class="mb-0">(01) 3233-452</p>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" id="contact-nombre" placeholder="Nombre" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <input type="email" class="form-control" id="contact-email" placeholder="Correo electrónico"
+                                required>
+                        </div>
+
+                        <div class="mb-3">
+                            <input type="text" class="form-control" id="contact-asunto" placeholder="Asunto" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <textarea class="form-control" id="contact-mensaje" rows="6" placeholder="Mensaje"
+                                required></textarea>
+                        </div>
+
+                        <div class="d-grid justify-content-end">
+                            <button type="submit" class="btn btn-lg send-btn">Enviar</button>
+                        </div>
+                    </form>
                 </div>
-                
-                <div class="social-icons">
-                    <a href="#" class="social-link facebook"><i class="bi bi-facebook"></i></a>
-                    <a href="#" class="social-link twitter"><i class="bi bi-twitter"></i></a>
-                    <a href="#" class="social-link instagram"><i class="bi bi-instagram"></i></a>
-                </div>
-            </div>
-            
-            <div class="col-lg-7">
-                <form class="contact-form p-4 shadow-sm bg-white rounded">
-                    
-                    <div class="mb-3">
-                        <input type="text" class="form-control" id="contact-nombre" placeholder="Nombre" required>
-                    </div>
-                    
-                    <div class="mb-3">
-                        <input type="email" class="form-control" id="contact-email" placeholder="Correo electrónico" required>
-                    </div>
-                    
-                    <div class="mb-3">
-                        <input type="text" class="form-control" id="contact-asunto" placeholder="Asunto" required>
-                    </div>
-                    
-                    <div class="mb-3">
-                        <textarea class="form-control" id="contact-mensaje" rows="6" placeholder="Mensaje" required></textarea>
-                    </div>
-                    
-                    <div class="d-grid justify-content-end">
-                        <button type="submit" class="btn btn-lg send-btn">Enviar</button>
-                    </div>
-                </form>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
     <footer class="bg-dark text-white pt-5 pb-4">
-    <div class="container text-center text-md-start">
-        <div class="row text-center text-md-start">
+        <div class="container text-center text-md-start">
+            <div class="row text-center text-md-start">
 
-            <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-                <h6 class="text-uppercase mb-4 fw-bold text-primary">
-                     FURNI-PRO
-                </h6>
-                <p>
-                    Liderando el diseño de interiores con innovación y calidad. Explora nuestros muebles en tu propio espacio con tecnología AR.
-                </p>
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h6 class="text-uppercase mb-4 fw-bold text-primary">
+                        FURNI-PRO
+                    </h6>
+                    <p>
+                        Liderando el diseño de interiores con innovación y calidad. Explora nuestros muebles en tu
+                        propio espacio con tecnología AR.
+                    </p>
+                </div>
+
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                    <h6 class="text-uppercase mb-4 fw-bold">Productos</h6>
+                    <p>
+                        <a href="#productos" class="text-white" style="text-decoration: none;">Sofás y Salas</a>
+                    </p>
+                    <p>
+                        <a href="#productos" class="text-white" style="text-decoration: none;">Mesas de Centro</a>
+                    </p>
+                    <p>
+                        <a href="#productos" class="text-white" style="text-decoration: none;">Muebles de Oficina</a>
+                    </p>
+                    <p>
+                        <a href="#productos" class="text-white" style="text-decoration: none;">Dormitorios</a>
+                    </p>
+                </div>
+
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                    <h6 class="text-uppercase mb-4 fw-bold">Ayuda y Enlaces</h6>
+                    <p>
+                        <a href="#" class="text-white" style="text-decoration: none;">Mi Cuenta</a>
+                    </p>
+                    <p>
+                        <a href="#" class="text-white" style="text-decoration: none;">Seguimiento de Pedido</a>
+                    </p>
+                    <p>
+                        <a href="#" class="text-white" style="text-decoration: none;">Tarifas de Envío</a>
+                    </p>
+                    <p>
+                        <a href="#" class="text-white" style="text-decoration: none;">Centro de Ayuda</a>
+                    </p>
+                </div>
+
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h6 class="text-uppercase mb-4 fw-bold">Contacto</h6>
+                    <p>
+                        <i class="bi bi-house-door-fill me-2"></i> Caracas 1230, Venezuela.
+                    </p>
+                    <p>
+                        <i class="bi bi-envelope-fill me-2"></i> info@furni-pro.com
+                    </p>
+                    <p>
+                        <i class="bi bi-telephone-fill me-2"></i> +58 234 567 88
+                    </p>
+                    <p>
+                        <i class="bi bi-printer-fill me-2"></i> +58 234 567 89
+                    </p>
+                </div>
             </div>
 
-            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
-                <h6 class="text-uppercase mb-4 fw-bold">Productos</h6>
-                <p>
-                    <a href="#productos" class="text-white" style="text-decoration: none;">Sofás y Salas</a>
-                </p>
-                <p>
-                    <a href="#productos" class="text-white" style="text-decoration: none;">Mesas de Centro</a>
-                </p>
-                <p>
-                    <a href="#productos" class="text-white" style="text-decoration: none;">Muebles de Oficina</a>
-                </p>
-                <p>
-                    <a href="#productos" class="text-white" style="text-decoration: none;">Dormitorios</a>
-                </p>
-            </div>
+            <hr class="mb-4">
 
-            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
-                <h6 class="text-uppercase mb-4 fw-bold">Ayuda y Enlaces</h6>
-                <p>
-                    <a href="#" class="text-white" style="text-decoration: none;">Mi Cuenta</a>
-                </p>
-                <p>
-                    <a href="#" class="text-white" style="text-decoration: none;">Seguimiento de Pedido</a>
-                </p>
-                <p>
-                    <a href="#" class="text-white" style="text-decoration: none;">Tarifas de Envío</a>
-                </p>
-                <p>
-                    <a href="#" class="text-white" style="text-decoration: none;">Centro de Ayuda</a>
-                </p>
-            </div>
-
-            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
-                <h6 class="text-uppercase mb-4 fw-bold">Contacto</h6>
-                <p>
-                    <i class="bi bi-house-door-fill me-2"></i> Caracas 1230, Venezuela. 
-                </p>
-                <p>
-                    <i class="bi bi-envelope-fill me-2"></i> info@furni-pro.com
-                </p>
-                <p>
-                    <i class="bi bi-telephone-fill me-2"></i> +58 234 567 88
-                </p>
-                <p>
-                    <i class="bi bi-printer-fill me-2"></i> +58 234 567 89
-                </p>
-            </div>
-        </div>
-
-        <hr class="mb-4">
-
-        <div class="row align-items-center">
-            <div class="col-md-7 col-lg-8">
-                <p class="text-center text-md-start">
-                    © 2024 Copyright:
-                    <a href="#" style="text-decoration: none;">
-                        <strong class="text-white">FURNI-PRO.com</strong>
-                    </a>
-                </p>
-            </div>
-            <div class="col-md-5 col-lg-4">
-                <div class="text-center text-md-end">
-                    <ul class="list-unstyled list-inline">
-                        <li class="list-inline-item">
-                            <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i class="bi bi-facebook"></i></a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i class="bi bi-twitter"></i></a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i class="bi bi-google"></i></a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i class="bi bi-instagram"></i></a>
-                        </li>
-                    </ul>
+            <div class="row align-items-center">
+                <div class="col-md-7 col-lg-8">
+                    <p class="text-center text-md-start">
+                        © 2024 Copyright:
+                        <a href="#" style="text-decoration: none;">
+                            <strong class="text-white">FURNI-PRO.com</strong>
+                        </a>
+                    </p>
+                </div>
+                <div class="col-md-5 col-lg-4">
+                    <div class="text-center text-md-end">
+                        <ul class="list-unstyled list-inline">
+                            <li class="list-inline-item">
+                                <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i
+                                        class="bi bi-facebook"></i></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i
+                                        class="bi bi-twitter"></i></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i
+                                        class="bi bi-google"></i></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i
+                                        class="bi bi-instagram"></i></a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</footer>
+    </footer>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <script src="script.js"></script>
 </body>
+
 </html>
