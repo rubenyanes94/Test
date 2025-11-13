@@ -156,6 +156,30 @@ body {
     border-radius: 5px;
 }
 
+/* Estilo base para los círculos de color */
+.color-swatch {
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    border: 2px solid #ccc;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    opacity: 0.8;
+}
+
+/* Estilo para el color seleccionado */
+.color-swatch.active {
+    border-color: #000; /* Borde más oscuro para el color activo */
+    transform: scale(1.1); /* Ligeramente más grande */
+    opacity: 1;
+}
+
+/* Contenedor del selector, para dar un poco de margen */
+.color-options-container {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+}
 
 @media (max-width: 991.98px) {
     body {
