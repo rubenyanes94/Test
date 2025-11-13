@@ -44,29 +44,21 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 document.addEventListener('DOMContentLoaded', () => {
-    // 1. Selecciona todos los selectores de color
     const swatches = document.querySelectorAll('.color-swatch');
 
     swatches.forEach(swatch => {
         swatch.addEventListener('click', (event) => {
             const clickedSwatch = event.currentTarget;
             
-            // 2. Obtiene la URL de la nueva imagen
             const newImageUrl = clickedSwatch.getAttribute('data-color-url');
             
-            // 3. Identifica la Card padre
             const card = clickedSwatch.closest('.card');
             
-            // 4. Encuentra la imagen dentro de esa card
             const imageElement = card ? card.querySelector('.card-img-top') : null;
 
             if (imageElement && newImageUrl) {
-                // 5. Cambia la fuente (src) de la imagen
                 imageElement.src = newImageUrl;
 
-                // 6. Manejo de la clase 'active'
-                
-                // Desactiva todos los hermanos (otros selectores de color)
                 const siblingSwatches = clickedSwatch.parentNode.querySelectorAll('.color-swatch');
                 siblingSwatches.forEach(s => s.classList.remove('active'));
 

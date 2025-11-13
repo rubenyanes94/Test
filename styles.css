@@ -181,6 +181,10 @@ body {
     border-bottom: 1px solid #eee;
 }
 
+.text-primary {
+    --bs-text-opacity: 1;
+    color: #25D366 !important;
+}
 @media (max-width: 991.98px) {
     body {
         padding-top: 56px;
