@@ -358,7 +358,7 @@
             </div>
 
             <div class="col-lg-7">
-                <form class="contact-form p-4 shadow-sm bg-white rounded">
+                <form class="contact-form p-4 shadow-sm bg-white rounded" onsubmit="return false;"> 
                     
                     <h4 class="mb-4 text-center fw-bold">Solicitar Asesoría Personalizada</h4>
 
@@ -388,7 +388,7 @@
                     </div>
 
                     <div class="d-grid">
-                        <button type="submit" class="btn btn-lg send-btn fw-bold">
+                        <button type="button" onclick="sendWhatsAppMessage()" class="btn btn-lg send-btn fw-bold btn-success">
                             <i class="fa-solid fa-paper-plane me-2"></i> Solicitar Consulta
                         </button>
                     </div>
