@@ -190,3 +190,48 @@ body {
         padding-top: 56px;
     }
 }
+
+/* --- Sección de Contacto --- */
+
+/* Estilos para el contenedor del mapa */
+.map-container iframe {
+    border-radius: 8px; /* Bordes redondeados para el mapa */
+}
+
+/* Estilos para los botones de redes sociales en la sección de Contacto */
+.social-icons-contact .social-btn {
+    display: inline-flex; /* Para centrar el icono verticalmente */
+    align-items: center;
+    justify-content: center;
+    width: 45px; /* Ancho del botón */
+    height: 45px; /* Altura del botón */
+    border-radius: 50%; /* Forma circular */
+    font-size: 20px; /* Tamaño del icono */
+    color: #fff; /* Color del icono */
+    text-decoration: none;
+    transition: all 0.3s ease; /* Transición suave para el hover */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra sutil */
+}
+
+.social-icons-contact .social-btn.facebook {
+    background-color: #3b5998; /* Color de Facebook */
+}
+
+.social-icons-contact .social-btn.instagram {
+    background-color: #E1306C; /* Color de Instagram */
+}
+
+.social-icons-contact .social-btn.tiktok {
+    background-color: #000000; /* Color de TikTok */
+}
+
+/* Efecto hover */
+.social-icons-contact .social-btn.facebook:hover {
+    background-color: #2d4373; /* Oscurecer Facebook al pasar el ratón */
+    transform: translateY(-2px); /* Pequeño levantamiento */
+}
+
+.social-icons-contact .social-btn.instagram:hover {
+    background-color: #c13584; /* Oscurecer Instagram al pasar el ratón */
+    transform: translateY(-2px);
+}
